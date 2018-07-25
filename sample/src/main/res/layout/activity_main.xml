@@ -9,42 +9,21 @@
     tools:context="ir.oveissi.threestateswitch.sample.MainActivity">
 
     <ir.oveissi.threestateswitch.ThreeStateSwitch
-        android:layout_gravity="center"
-        android:layout_margin="30dp"
         android:id="@+id/threeState"
-        android:layout_width="200dp"
-        app:text_right="زیاد"
-        app:text_left="کم"
-        android:layout_height="wrap_content"
-        app:text_normal_size="16sp"
-        app:text_selected_size="20sp"/>
-
-    <ir.oveissi.threestateswitch.ThreeStateSwitch
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_margin="30dp"
-        android:id="@+id/threeState1"
-        android:layout_width="200dp"
-        app:text_right="زیاد"
-        app:text_left="کم"
-        app:text_selected_color="#0037ec"
-        android:layout_height="wrap_content"
-        app:text_normal_size="16sp"
-        app:text_selected_size="20sp"/>
-
-
-    <ir.oveissi.threestateswitch.ThreeStateSwitch
-        android:layout_gravity="center"
-        android:layout_margin="30dp"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"/>
-
-
-    <ir.oveissi.threestateswitch.ThreeStateSwitch
-        android:layout_gravity="center"
-        android:layout_margin="30dp"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        app:background_normal_color="#3b6bfc"
-        app:background_selected_color="#ff3f3f"/>
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:background_normal_color="@android:color/darker_gray"
+        app:background_selected_left_color="@android:color/holo_red_light"
+        app:background_selected_right_color="@android:color/holo_green_light"
+        app:text_selected_left_color="@android:color/holo_red_light"
+        app:text_selected_right_color="@android:color/holo_green_light"
+        app:text_normal_size="36dp"
+        app:text_selected_size="36dp"
+        app:text_left="-"
+        app:text_right="+"/>
 
 </LinearLayout>

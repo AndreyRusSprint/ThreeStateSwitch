@@ -56,9 +56,9 @@ Add the ThreeStateSwitch in your layout file and customize it the way you like i
 ```
 You can set a listener for state changes
 ```java
-threeState.setOnChangeListener(new ThreeStateSwitch.OnStateChangeListener() {
+threeState.setOnChangeListener(new ThreeStateSwitch.onStateChangeListener() {
     @Override
-    public void OnStateChangeListener(int currentState) {
+    public void onStateChangeListener(int currentState) {
         //current state=  -1  0  1
         Toast.makeText(MainActivity.this, String.valueOf(currentState), Toast.LENGTH_SHORT).show();
     }
