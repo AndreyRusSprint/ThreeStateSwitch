@@ -240,6 +240,8 @@ public class ThreeStateSwitch extends View {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        if (!isEnabled()) return false;
+
         int action = event.getAction() & MotionEvent.ACTION_MASK;
 
         switch(action) {
