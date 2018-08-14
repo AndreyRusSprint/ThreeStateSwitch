@@ -6,24 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="ir.oveissi.threestateswitch.sample.MainActivity">
+    tools:context="andreyrussprint.threestateswitch.sample.MainActivity">
 
-    <ir.oveissi.threestateswitch.ThreeStateSwitch
-        android:id="@+id/threeState"
+    <andreyrussprint.threestateswitch.ThreeStateSwitch
+        android:id="@+id/threeStateSwitch"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="80dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp"
-        app:background_normal_color="@android:color/darker_gray"
-        app:background_selected_left_color="@android:color/holo_red_light"
-        app:background_selected_right_color="@android:color/holo_green_light"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:background_middle_color="@android:color/darker_gray"
+        app:background_left_color="@android:color/holo_red_light"
+        app:background_right_color="@android:color/holo_green_light"
         app:text_selected_left_color="@android:color/holo_red_light"
         app:text_selected_right_color="@android:color/holo_green_light"
         app:text_normal_size="36dp"
         app:text_selected_size="36dp"
         app:text_left="-"
-        app:text_right="+"/>
+        app:text_right="+" />
 
 </LinearLayout>
