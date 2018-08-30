@@ -16,7 +16,7 @@ A simple three-state switch view for Android.
 
 # Preview
 
-![](https://raw.githubusercontent.com/abbas-oveissi/ThreeStateSwitch/master/assets/demo.gif)
+![](https://raw.githubusercontent.com/AndreyRusSprint/ThreeStateSwitch/master/assets/demo.gif)
 
 # Setup
 ## 1. Provide the gradle dependency
@@ -33,7 +33,7 @@ allprojects {
 Add the dependency:
 ```gradle
 dependencies {
-	compile 'com.github.abbas-oveissi:threestateswitch:0.8.2'
+	compile 'com.github.AndreyRusSprint:ThreeStateSwitch:1.1.0'
 }
 ```
 
@@ -41,60 +41,59 @@ dependencies {
 
 Add the ThreeStateSwitch in your layout file and customize it the way you like it.
 ```xml
-<ir.oveissi.threestateswitch.ThreeStateSwitch
-    android:id="@+id/threeState"
-    android:layout_width="200dp"
-    android:layout_height="wrap_content"
-    app:background_selected_color="#5bb434"
-    app:background_normal_color="#bfbfbf"
-    app:text_left="چپ"
-    app:text_right="راست"
-    app:text_selected_color="#5bb434"
-    app:text_normal_color="#646464"
-    app:text_normal_size="16sp"
-    app:text_selected_size="20sp"/>
+<andreyrussprint.threestateswitch.ThreeStateSwitch
+        android:id="@+id/threeStateSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	app:text_left="-"
+	app:text_right="+"
+        app:background_middle_color="@android:color/darker_gray"
+        app:background_left_color="@android:color/holo_red_light"
+        app:background_right_color="@android:color/holo_green_light"
+        app:text_selected_left_color="@android:color/holo_red_light"
+        app:text_selected_right_color="@android:color/holo_green_light"
+        app:text_normal_size="36sp"
+        app:text_selected_size="36sp"/>
 ```
 You can set a listener for state changes
 ```java
-threeState.setOnChangeListener(new ThreeStateSwitch.onStateChangeListener() {
-    @Override
-    public void onStateChangeListener(int currentState) {
-        //current state=  -1  0  1
-        Toast.makeText(MainActivity.this, String.valueOf(currentState), Toast.LENGTH_SHORT).show();
-    }
+threeStateSwitch.setOnChangeListener(new ThreeStateSwitch.OnStateChangeListener() {
+            @Override
+            public void onStateChangeListener(SwitchStates currentState) {
+                Toast.makeText(MainActivity.this, currentState.toString(), Toast.LENGTH_SHORT).show();
+            }
 });
-```
-You can set typeface for texts.
-```java
-threeState.setNormalTextTypeface( );
-threeState.setSelectedTextTypeface( );
 ```
 Get the current state. 
 ```java
-//state=  -1  0  1
-threeState.getState();
+// state = LEFT_STATE  MIDDLE_STATE  RIGHT_STATE
+threeStateSwitch.getState();
 ```
 ## attributes
 
 | Name | Type | Default | Description |
 |:----:|:----:|:-------:|:-----------:|
-|background_selected_color|Color|#5bb434|  |
-|background_normal_color|Color|#bfbfbf|  |
-|text_normal_color|Color|#646464|  |
-|text_selected_color|Color|#5bb434|  |
-|text_left|String||  |
-|text_right|String||  |
-|text_normal_size|Dp or Sp|16sp|  |
-|text_selected_size|Dp or Sp|16sp|  |
+|background_left_color|Color|#cc2900|Switch background color when left state selected|
+|background_right_color|Color|#5ab72e|Switch background color when right state selected|
+|background_middle_color|Color|#bfbfbf|Switch background color when middle state selected|
+|text_normal_color|Color|#646464|Text color when middle state selected|
+|text_selected_left_color|Color|#cc2900|Left text color when left state selected|
+|text_selected_right_color|Color|#5bb434|Right text color when right state selected|
+|text_left|String||Text to the left of switch|
+|text_right|String||Text to the right of switch|
+|text_normal_size|Dp or Sp|16sp|Text size when middle state selected|
+|text_selected_size|Dp or Sp|16sp|Text size when left or right state selected|
 
 # Bugs and features
 
 For bugs, feature requests, and discussion please use GitHub Issues.
 
-# Developed By
+# Participants
 
+Developed by:
 * Abbas Oveissi - [@abbas_oveissi](https://twitter.com/abbas_oveissi)
-
+Improved by:
+* AndreyRusSprint - [@andreyrussprint](tg://resolve?domain=andreyrussprint)
 
 # License
 
