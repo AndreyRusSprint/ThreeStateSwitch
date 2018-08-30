@@ -92,8 +92,9 @@ For bugs, feature requests, and discussion please use GitHub Issues.
 
 Developed by:
 * Abbas Oveissi - [@abbas_oveissi](https://twitter.com/abbas_oveissi)
+
 Improved by:
-* AndreyRusSprint - <a href="tg://resolve?domain=andreyrussprint">@andreyrussprint</a>
+* AndreyRusSprint - [@andreyrussprint](https://t.me/andreyrussprint)
 
 # License
 
