@@ -1,4 +1,4 @@
-[![Release](https://jitpack.io/v/abbas-oveissi/ThreeStateSwitch.svg)](https://jitpack.io/#abbas-oveissi/ThreeStateSwitch)
+[![Release](https://jitpack.io/v/AndreyRusSprint/ThreeStateSwitch.svg)](https://jitpack.io/#AndreyRusSprint/ThreeStateSwitch)
 
 ## ThreeStateSwitch
 
