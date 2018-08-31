@@ -45,15 +45,15 @@ Add the ThreeStateSwitch in your layout file and customize it the way you like i
         android:id="@+id/threeStateSwitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-	app:text_left="-"
-	app:text_right="+"
         app:background_middle_color="@android:color/darker_gray"
         app:background_left_color="@android:color/holo_red_light"
         app:background_right_color="@android:color/holo_green_light"
         app:text_selected_left_color="@android:color/holo_red_light"
         app:text_selected_right_color="@android:color/holo_green_light"
         app:text_normal_size="36sp"
-        app:text_selected_size="36sp"/>
+        app:text_selected_size="36sp"
+	app:text_left="-"
+	app:text_right="+"/>
 ```
 You can set a listener for state changes
 ```java
