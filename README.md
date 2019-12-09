@@ -53,7 +53,8 @@ Add the ThreeStateSwitch in your layout file and customize it the way you like i
         app:text_normal_size="36sp"
         app:text_selected_size="36sp"
 	app:text_left="-"
-	app:text_right="+"/>
+	app:text_right="+"
+/>
 ```
 You can set a listener for state changes
 ```java
